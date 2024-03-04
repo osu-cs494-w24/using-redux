@@ -1,10 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit'
 
 import todosReducer from './todosSlice'
+import visibilityFilterReducer from './visibilityFilterSlice'
 
 const store = configureStore({
     reducer: {
-        todos: todosReducer
+        todos: todosReducer,
+        visibilityFilter: visibilityFilterReducer
     }
 })
 
